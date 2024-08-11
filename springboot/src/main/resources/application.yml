@@ -1,0 +1,44 @@
+server:
+  ip: localhost
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mengs-bs?serverTimezone=Asia/Shanghai
+    username: root
+    password: mengshuo
+
+  jackson:
+    date-format: yyyy-MM-dd hh:mm:ss
+    time-zone: GMT+8
+  #日期格式化
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml  #扫描所有mybatis的xml文件
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+## 开启sql日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 文件上传路径 path:
+files:
+  upload:
+    path: G:\springboot-vue2\files\
+
+
+# 签章图片上传路径
+signPic:
+  path: D:\Documents\zyzBs\seal\
+
+#PDF原始与加印后的文件存储路径
+pdf:
+  origin:
+    path: D:\Documents\zyzBs\pdf\origin\
+  new:
+    path: D:\Documents\zyzBs\pdf\new\
+  verify:
+    path: D:\Documents\zyzBs\pdf\verify\

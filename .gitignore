@@ -1,0 +1,13 @@
+# Node / frontend
+SealSystem/node_modules/
+SealSystem/dist/
+
+# Java / backend build output
+springboot/target/
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
